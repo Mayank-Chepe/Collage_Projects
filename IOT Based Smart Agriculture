@@ -1,0 +1,71 @@
+# 🌱 IoT-Based Smart Agriculture System 🚜
+
+An **Arduino-powered** 🌟 smart agriculture project that measures 🌡️ **temperature**, 💧 **humidity**, and 🌿 **soil moisture** — helping farmers & gardeners monitor plant health in real-time!  
+
+---
+
+## 🛠️ Components Needed
+
+| Component | Quantity | Emoji |
+|-----------|----------|-------|
+| Arduino Uno/Nano | 1 | 💻 |
+| DHT11/DHT22 Sensor | 1 | 🌡️ |
+| Soil Moisture Sensor | 1 | 🌱 |
+| Jumper Wires | As needed | 🔌 |
+| USB Cable | 1 | ⚡ |
+
+---
+
+## 🔌 Wiring Guide
+
+- **DHT Sensor**
+  - Data ➡️ **D2**
+  - VCC ➡️ **5V**
+  - GND ➡️ **GND**
+
+- **Soil Moisture Sensor**
+  - Analog Output ➡️ **A0**
+  - VCC ➡️ **5V**
+  - GND ➡️ **GND**
+
+---
+
+## 🚀 How to Use
+
+1. **📥 Install** the [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library) via Arduino IDE:
+   - `Sketch → Include Library → Manage Libraries → Search "DHT" → Install`
+   
+2. **📂 Open** the `.ino` file in Arduino IDE.
+
+3. **⚙️ Select** your board & port in `Tools`.
+
+4. **⬆️ Upload** the code to Arduino.
+
+5. **🖥️ Open** Serial Monitor at **9600 baud** to see live readings.
+
+---
+
+## 📊 Features
+
+✅ Reads:
+- 🌡️ **Temperature** (°C)  
+- 💧 **Humidity** (%)  
+- 🌱 **Soil Moisture** (%)
+
+✅ Alerts:
+- 🚨 Soil too dry (< 30%)
+- 🌊 Soil too wet (> 80%)
+- 🟢 Optimal moisture otherwise
+
+---
+
+## 🖨️ Sample Output
+
+IoT-Based Smart Agriculture System
+Temperature: 25.0 °C 🌡️
+Humidity: 60.0 % 💧
+Soil Moisture: 45 % 🌱
+Soil moisture is optimal ✅
+
+
+
