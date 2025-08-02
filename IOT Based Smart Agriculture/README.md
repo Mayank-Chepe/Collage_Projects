@@ -1,0 +1,63 @@
+# 🌱 IOT Based Smart Agriculture – Arduino Uno Project
+
+This is a **college-level Arduino IoT project** designed to monitor 🌡️ **temperature**, 💧 **humidity**, and 🌿 **soil moisture**.  
+It uses a **DHT11 sensor** for temperature & humidity, and an **analog soil moisture sensor** to determine the soil’s water level, printing **real-time readings** via the Serial Monitor and giving **alerts** for irrigation needs.
+
+---
+
+## 🚀 Features
+
+- 📊 Reads **temperature**, **humidity**, and **soil moisture**.
+- 🔄 Converts soil moisture sensor values into **percentage** (0–100%).
+- ⚠️ Alerts when:
+  - Soil is **too dry** (< 30%)
+  - Soil is **too wet** (> 80%)
+  - Soil moisture is **optimal** otherwise
+- ⏱ Updates readings every **5 seconds** via Serial Monitor.
+- 🛠 Beginner-friendly — perfect for **IoT, electronics, or agriculture projects**.
+
+---
+
+## 🔧 Hardware Required
+
+- Arduino Uno board 💻  
+- DHT11 (or DHT22) Temperature & Humidity Sensor 🌡️  
+- Soil Moisture Sensor 🌱  
+- Breadboard & jumper wires 🔌  
+- USB cable ⚡  
+
+---
+
+## 🖥️ How It Works
+
+1. **Temperature & Humidity** are read from the DHT sensor connected to **digital pin D2**.  
+2. **Soil moisture** is measured via the analog soil moisture sensor on **A0**, mapped to a **percentage scale**.  
+3. Based on the soil moisture percentage:
+   - `< 30%` → 🚨 **Too dry** → irrigation needed
+   - `30% – 80%` → ✅ **Optimal**
+   - `> 80%` → 🌊 **Too wet**
+4. All results are printed on the **Serial Monitor** every **5 seconds**.
+
+---
+
+## 📊 Soil Moisture Alerts
+
+| Moisture % | Status          | Action                      |
+|------------|----------------|-----------------------------|
+| `< 30%`    | Too Dry 🚨      | Irrigate plants immediately |
+| 30–80%     | Optimal ✅      | No action needed            |
+| `> 80%`    | Too Wet 🌊      | Improve drainage            |
+
+---
+
+## 📟 Sample Serial Monitor Output
+
+IoT-Based Smart Agriculture System
+Temperature: 25.0 °C 🌡️
+Humidity: 60.0 % 💧
+Soil Moisture: 45 % 🌱
+Soil moisture is optimal ✅
+Temperature: 29.5 °C 🌡️
+Humidity: 52.0 % 💧
+Soil Moisture: 20 % 🌱
+Alert: Soil is too dry! 🚨
